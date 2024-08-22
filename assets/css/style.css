@@ -1009,6 +1009,8 @@ transition: all 1s ease;
       inline-size: 70cqi;
       border-radius: var(--radius-3);
       scale: 0.4;
+      border: none !important;
+      background: none !important;
     }
   
     .card-img {
@@ -1299,9 +1301,7 @@ width:95%;
 .video_bx__parent img{
   height: 50vh !important;
 }
-section,footer{
-  overflow: hidden;
-}
+
 
 
 
@@ -1521,6 +1521,9 @@ header {
   }
   .custom-card img {
     height: 200px;
+  }
+  section,footer{
+    overflow: hidden;
   }
 }
 @media (max-width: 550px) {
