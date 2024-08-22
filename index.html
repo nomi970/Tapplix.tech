@@ -7,41 +7,48 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     
     <title>Tapplix</title>
 </head>
 <body>
 
-    <section class="hero__video__sec ">
-        <div class="container">
-            <header data-aos="fade-down" data-aos-duration="1500">
-                <div class="main_nav_logo">
-                    <a href="#"><img src="./assets/images/main-logo.png" alt="main-logo"></a>
-                </div>
-                <div class="nav__items">
-                    <a href="./about-us.html">About Us</a>
-                    <a href="./services.html">Services</a>
-                    <a href="./our-technologies.html">Technology</a>
-                    <a href="./our-process.html">Our Process</a>
-                    <a href="./contact-us.html">Contact Us</a>
-                </div>
-            </header>
-        </div>
-            <div class="video_bx__parent">
-                <div class="hero__video_bx">
-                    <video width="100%" autoplay muted loop>
-                        <source src="./assets/images/hero_video.mp4" type="video/mp4">
-                    </video>
-                    <div class="video__bx_content">
-                        <h1 class="font_60 fw_600 text-white" data-aos="fade-left" data-aos-duration="1500">We Empower </h1>
-                        <p class="text-white font_20 mt-3 ln_28" data-aos="fade-right" data-aos-duration="1500">Big brands, and visionary thinkers with software solutions that conquer business challenges, enhance productivity, and drive growth. Partner with us to transform your vision into reality.</p>
-                    </div>
-                </div>
+  <section class="hero__video__sec">
+    <div class="container">
+        <header data-aos="fade-down" data-aos-duration="1500">
+            <div class="main_nav_logo">
+                <a href="#"><img src="./assets/images/main-logo.png" alt="main-logo"></a>
             </div>
-            
-        
-    </section>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav__items" id="navItems">
+                <a href="./about-us.html">About Us</a>
+                <a href="./services.html">Services</a>
+                <a href="./our-technologies.html">Technology</a>
+                <a href="./our-process.html">Our Process</a>
+                <a href="./contact-us.html">Contact Us</a>
+            </div>
+        </header>
+    </div>
+    <div class="video_bx__parent">
+        <div class="hero__video_bx">
+            <video width="100%" autoplay muted loop>
+                <source src="./assets/images/hero_video.mp4" type="video/mp4">
+            </video>
+            <div class="video__bx_content">
+                <h1 class="font_60 fw_600 text-white" data-aos="fade-left" data-aos-duration="1500">We Empower </h1>
+                <p class="text-white font_20 mt-3 ln_28" data-aos="fade-right" data-aos-duration="1500">
+                    Big brands, and visionary thinkers with software solutions that conquer business challenges,
+                    enhance productivity, and drive growth. Partner with us to transform your vision into reality.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
     <section class="transform_bg skew-active">
         <div class="container">
             <img width="100%" data-aos="fade-up" data-aos-duration="3000" src="./assets/images/tm3.png" alt="transform_bg">
@@ -372,7 +379,7 @@
               <section role="feed" class="cards">
                 <article class="sample-card d-flex">
                     <img data-aos="fade-left" src="./assets/images/web_app.webp" alt="">
-                    <div class="w-100 ex__padd" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="w-100 ex__padd">
                         <h2 class="font_30 fw_700 text-black pb-2">Web Application Development</h2>
                         <p class="font_18 fw_400 mb-3">By using Scrum, Kanban, or Lean methodology, our IT development company delivers functional and stable applications on time, even in a constantly changing business environment. Our web apps solve a problem, are easy to use, and look stunning.</p>
                         <button class="btn btn--liquidBtn" style="margin: 0 auto;">
@@ -709,19 +716,19 @@
 
      
 
-    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+    <!-- <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
     <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
-    <script src='https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js'></script><script  src="./assets/js/script.js"></script>
+    <script src='https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js'></script> -->
 
     <!-- ************************Scripts Start Here*********************************-->
 
 <!--------------------------------- Jquery --------------------------->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 <!-------------------------------- Jquery Ends------------------------------->
 
 <!--------------------------------- Popper Js ------------------------------->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
 <!--------------------------------- Popper Js Ends----------------------------->
 
 <!--------------------------------- Bootstrap 5 cdn ---------------------------->
@@ -730,14 +737,14 @@
 
 <!------------------------------- Custom Js ---------------------------------->
 <script src="assets/js/script.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 <!------------------------------ Custom Js Ends --------------------->
 <!-- jQuery -->
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 <!-- jQuery Validation Plugin -->
 <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script> -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script> -->
 
 <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script> -->
@@ -913,6 +920,15 @@ document.addEventListener('scroll', debounce(handleScroll, 50));
 
 
   </script>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navItems = document.getElementById('navItems');
+
+    hamburger.addEventListener('click', () => {
+        navItems.classList.toggle('show');
+    });
+</script>
+
 
 
 </body>
