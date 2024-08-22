@@ -1558,4 +1558,7 @@ header {
     width: 89% !important;
     left: 0 !important;
   }
+  .video__bx_content .font_60{
+    font-size: 35px;
+  }
 }
