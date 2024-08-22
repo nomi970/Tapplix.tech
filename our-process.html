@@ -20,14 +20,18 @@
 </head>
 
 <body>
-
-    <!-- <section class="">
+    <section class="hero__video__sec other__page_hero">
         <div class="container">
-            <header>
+            <header data-aos="fade-down" data-aos-duration="1500">
                 <div class="main_nav_logo">
                     <a href="#"><img src="./assets/images/main-logo.png" alt="main-logo"></a>
                 </div>
-                <div class="nav__items">
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav__items" id="navItems">
                     <a href="./about-us.html">About Us</a>
                     <a href="./services.html">Services</a>
                     <a href="./our-technologies.html">Technology</a>
@@ -36,19 +40,28 @@
                 </div>
             </header>
         </div>
-    </section>
-    <section class="about-hero">
-        <div class="container">
-            <div class="title container">
-                <h2 class="font_60 text-center pt-5 text-white">Proven Process, <span>Real Results</span> </h2>
-                <p class="about-p font_18 fw_400 mt-3 mb-3 text-white ln_28">
-                    Take a look at our web and software development process
-                </p>
+            <div class="video_bx__parent">
+                <div class="hero__video_bx">
+                    <img height="auto" width="100%" src="./assets/images/OurMethod.jpg" alt="">
+                    <div class="video__bx_content">
+                        <h1 class="font_60 fw_600 text-white" data-aos="fade-left" data-aos-duration="1500">Proven Process, <span>Real Results</span></h1>
+                        <p class="text-white font_20 mt-3 ln_28" data-aos="fade-right" data-aos-duration="1500">Take a look at our web and software development process<p></div>
+                </div>
             </div>
+    </section>
 
-        </div>
-    </section> -->
-    <section class="hero__video__sec other__page_hero">
+
+
+
+
+
+
+
+
+
+
+
+    <section class="hero__video__sec other__page_hero d-none">
         <div class="container">
             <header data-aos="fade-down" data-aos-duration="1500">
                 <div class="main_nav_logo">
@@ -74,7 +87,7 @@
             </div>
     </section>
 
-    <section class="our-process-section">
+    <section class="our-process-section overflow-hidden">
         <div class="container">
             <ul class="pro-ul1">
                 <li class="pro-li1">
@@ -200,19 +213,19 @@
         <div class="container">
           <div class="ftt_links">
             <div class="pb-4" data-aos="fade-right" data-aos-duration="1500">
-              <a class="text-decoration-none main_nav_logo" href="#"><img src="./assets/images/main-logo.png" alt=""></a>
+              <a class="text-decoration-none main_nav_logo" href="./index.html"><img src="./assets/images/main-logo.png" alt=""></a>
               <p class="font_18 ln_24 pt-4">Unlocking Innovation, One App at a Time</p>
               <div class="f_links mt-3"n style="flex-direction: row;">
-                <a class="d-flex align-items-center gap-2" href="#">
+                <a class="d-flex align-items-center gap-2" href="https://www.facebook.com/Tapplix/" target="_blank">
                   <div class="f_link_bx"><i class="fab fa-facebook-f"></i></div>
                 </a>
-                <a class="d-flex align-items-center gap-2" href="#">
+                <a class="d-flex align-items-center gap-2" href="https://www.linkedin.com/company/tapplix/" target="_blank">
                   <div class="f_link_bx"><i class="fab fa-linkedin-in"></i></div>
                 </a>
-                <a class="d-flex align-items-center gap-2" href="#">
+                <a class="d-flex align-items-center gap-2" href="https://www.instagram.com/tapplix/?igshid=ZWQyN2ExYTkwZQ%3D%3D" target="_blank">
                   <div class="f_link_bx"><i class="fab fa-instagram"></i></div>
                 </a>
-                <a class="d-flex align-items-center gap-2" href="#">
+                <a class="d-flex align-items-center gap-2" href="https://dribbble.com/Tapplix" target="_blank">
                   <div class="f_link_bx"><i class="fas fa-globe"></i></div>
                 </a>
                 
@@ -220,39 +233,39 @@
             </div>
             <div class="f_links" data-aos="fade-up" data-aos-duration="1500">
               <!-- <h2>Quick Links</h2> -->
-              <a href="#">Services</a>
-              <a href="#">Our Process</a>
-              <a href="#">Technologies</a>
-              <a href="#">Our Process</a>
+              <a href="./about-us.html">About</a>
+              <a href="./services.html">Services</a>
+              <a href="./our-technologies.html">Technologies</a>
+              <a href="./our-process.html">Our Process</a>
             </div>
             <div class="f_links" data-aos="fade-left" data-aos-duration="1500">
-              <!-- <h2>Contact</h2> -->
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a class="d-flex align-items-center gap-2" href="mailto:info@tapplix.tech">
                 <div class="f_link_bx"><i class="fas fa-envelope"></i></div>
                 <p>info@tapplix.tech</p>
               </a>
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a class="d-flex align-items-center gap-2" href="tel:+18003420989">
                 <div class="f_link_bx"><i class="fas fa-phone-alt"></i></div>
                 <p>+1 800 342 0989</p>
               </a>
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a target="_blank" class="d-flex align-items-center gap-2" href="https://wa.me/18003420989">
                 <div class="f_link_bx"><i class="fab fa-whatsapp"></i></div>
                 <p>+1 800 342 0989</p>
               </a>
             </div>
+            
           </div>
          
           <div class="footer-links">
             <p>© 2017-2023 Tapplix. All Rights Reserved</p>
             <div class="f_links" style="flex-direction: row; gap: 30px;">
               <!-- <h2>Contact</h2> -->
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a class="d-flex align-items-center gap-2" href="./privacy-policy.html">
                 <p>Privacy Policy</p>
               </a>
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a class="d-flex align-items-center gap-2" href="./terms-service.html">
                 <p>Terms of Use</p>
               </a>
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a class="d-flex align-items-center gap-2" href="./cookies-policy.html">
                 <p>Cookies Policy</p>
               </a>
             </div>

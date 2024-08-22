@@ -1296,10 +1296,10 @@ width:95%;
 }
 
 .other__page_hero .hero__video_bx::after{
-  height: 50vh !important;
+  height: 60vh !important;
 }
 .video_bx__parent img{
-  height: 50vh !important;
+  height: 60vh !important;
 }
 .ser_sec{
   padding-top: 50px;

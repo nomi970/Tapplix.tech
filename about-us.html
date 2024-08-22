@@ -21,13 +21,18 @@
 
 <body>
 
-    <!-- <section class="">
+    <section class="">
         <div class="container">
             <header>
                 <div class="main_nav_logo">
                     <a href="#"><img src="./assets/images/main-logo.png" alt="main-logo"></a>
                 </div>
-                <div class="nav__items">
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav__items" id="navItems">
                     <a href="./about-us.html">About Us</a>
                     <a href="./services.html">Services</a>
                     <a href="./our-technologies.html">Technology</a>
@@ -49,8 +54,8 @@
             </div>
 
         </div>
-    </section> -->
-    <section class="hero__video__sec other__page_hero">
+    </section>
+    <section class="hero__video__sec other__page_hero d-none">
         <div class="container">
             <header data-aos="fade-down" data-aos-duration="1500">
                 <div class="main_nav_logo">
@@ -65,16 +70,204 @@
                 </div>
             </header>
         </div>
-            <div class="video_bx__parent">
-                <div class="hero__video_bx">
-                    <img height="auto" width="100%" src="./assets/images/about-bg.png" alt="">
-                    <div class="video__bx_content">
-                        <h1 class="font_60 fw_600 text-white" data-aos="fade-left" data-aos-duration="1500">About Us </h1>
-                        <p class="text-white font_20 mt-3 ln_28" data-aos="fade-right" data-aos-duration="1500">We offer end-to-end software development for businesses of all sizes, covering everything from analysis and design to development and QA.</p>
+        <div class="video_bx__parent">
+            <div class="hero__video_bx">
+                <img height="auto" width="100%" src="./assets/images/about-bg.png" alt="">
+                <div class="video__bx_content">
+                    <h1 class="font_60 fw_600 text-white" data-aos="fade-left" data-aos-duration="1500">About Us </h1>
+                    <p class="text-white font_20 mt-3 ln_28" data-aos="fade-right" data-aos-duration="1500">We offer
+                        end-to-end software development for businesses of all sizes, covering everything from analysis
+                        and design to development and QA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-team-section pb-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <h2>Our Team <br> Is Your Team</h2>
+                    <p class="team-description">We integrate seamlessly with your organization, bringing expertise and
+                        dedication to every project. Our collaborative approach ensures your success.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-us-img">
+                        <img src="assets/images/our-team.png" width="100%">
                     </div>
                 </div>
             </div>
+        </div>
     </section>
+    <!--  -->
+    <section class="at_glance_section pb-0" id="counter__number">
+        <div class="container">
+            <div class="glance_main mt_24 bg-transparent">
+                <div class="glance__content" data-aos="fade-up" data-aos-duration="1500">
+                    <h2 class="nav-text-color font_72_300 font__manifa count" style="color: black !important;"
+                        data-original="7+">0</h2>
+                    <p class="font_18 fw_500">
+                        Years on the IT market
+                    </p>
+                </div>
+                <div class="glance__content" data-aos="fade-up" data-aos-duration="1500">
+                    <h2 class="nav-text-color font_72_300 font__manifa count" style="color: black !important;"
+                        data-original="200+">0+</h2>
+                    <p class="font_18 fw_500">
+                        Completed projects
+                    </p>
+                </div>
+                <div class="glance__content" data-aos="fade-up" data-aos-duration="1500">
+                    <h2 class="nav-text-color font_72_300 font__manifa count" style="color: black !important;"
+                        data-original="6">0</h2>
+                    <p class="font_18 fw_500">
+                        Big brands in our portfolio
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- or-team -->
+
+    <section class="teamWrapper">
+        <div class="container">
+            <h2 class="team-heading">Meet the team</h2>
+            <div class="teamGrid pt-5 row">
+                <div class="colmun col-md-4 col-sm-6">
+                    <div class="teamcol">
+                        <div class="teamcolinner">
+                            <div class="avatar"><img src="assets/images/Morgan-S.png" alt="Member"></div>
+                            <div class="member-name">
+                                <h2 class="align-items-center" style="color:black">Morgan S
+                                </h2>
+                            </div>
+                            <div class="member-info">
+                                <p class="align-items-center" style="color:black">Chief Technology Officer (CTO)</p>
+                            </div>
+                            <div class="member-social">
+                                <ul class="social-listing">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colmun col-md-4 col-sm-6">
+                    <div class="teamcol">
+                        <div class="teamcolinner">
+                            <div class="avatar"><img src="assets/images/Muhammad-F.png" alt="Member"></div>
+                            <div class="member-name">
+                                <h2 class="align-items-center" style="color:black">Muhammad F
+                                </h2>
+                            </div>
+                            <div class="member-info">
+                                <p class="align-items-center" style="color:black"> Chief Innovation Officer (CIO)</p>
+                            </div>
+
+                            <div class="member-social">
+                                <ul class="social-listing">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colmun col-md-4 col-sm-6">
+                    <div class="teamcol">
+                        <div class="teamcolinner">
+                            <div class="avatar"><img src="assets/images/Udara-M.png" alt="Member"></div>
+                            <div class="member-name">
+                                <h2 class="align-items-center" style="color:black">Udara M
+                                </h2>
+                            </div>
+                            <div class="member-info">
+                                <p class="align-items-center" style="color:black"> Director of Engineering (VP)</p>
+                            </div>
+
+                            <div class="member-social">
+                                <ul class="social-listing">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colmun col-md-4 col-sm-6">
+                    <div class="teamcol">
+                        <div class="teamcolinner">
+                            <div class="avatar"><img src="assets/images/Anil-S.png" alt="Member"></div>
+                            <div class="member-name">
+                                <h2 class="align-items-center" style="color:black">Anil S
+                                </h2>
+                            </div>
+                            <div class="member-info">
+                                <p class="align-items-center" style="color:black"> Technical Engineer Lead (TL)</p>
+                            </div>
+
+                            <div class="member-social">
+                                <ul class="social-listing">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colmun col-md-4 col-sm-6">
+                    <div class="teamcol">
+                        <div class="teamcolinner">
+                            <div class="avatar"><img src="assets/images/Branden-B.png" alt="Member"></div>
+                            <div class="member-name">
+                                <h2 class="align-items-center" style="color:black">Branden B
+                                </h2>
+                            </div>
+                            <div class="member-info">
+                                <p class="align-items-center" style="color:black"> IT Business Developer (BD)</p>
+                            </div>
+
+                            <div class="member-social">
+                                <ul class="social-listing">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colmun col-md-4 col-sm-6">
+                    <div class="teamcol">
+                        <div class="teamcolinner">
+                            <div class="avatar"><img src="assets/images/LeVance.png" alt="Member"></div>
+                            <div class="member-name">
+                                <h2 class="align-items-center" style="color:black">LeVance H
+                                </h2>
+                            </div>
+                            <div class="member-info">
+                                <p class="align-items-center" style="color:black"> Engineering Project Manager (PM)</p>
+                            </div>
+
+                            <div class="member-social">
+                                <ul class="social-listing">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="teamGrid">
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
     <!-- <section>
         <div class="container">
             <div class="title container">
@@ -90,25 +283,27 @@
             </div>
         </div>
     </section> -->
-    <section class="botiuqe-section pt-0" data-aos="fade-right" data-aos-duration="1500">
+    <section class="botiuqe-section " data-aos="fade-right" data-aos-duration="1500">
         <div class="main-botiuqe">
-          <div class="botuiqe-text bg-white align-items-start">
-            <h2 >Established in  <span style="color: #29AFE8;">2017</span></h2>
-            <p>
-                An Insight into Our Story and Journey. Explore the unique blend of creativity and precision that
-                defines our
-                journey. Let's shape the future of your business together. </p>
+            <div class="botuiqe-text bg-white align-items-start">
+                <h2>Established in <span style="color: #29AFE8;">2017</span></h2>
                 <p>
-                    Tapplix stands out with a holistic approach to web and mobile app development, focusing on both exceptional aesthetics and superior functionality. We deliver high-quality programming while ensuring our digital products are not only visually appealing but also highly usable.</p>
+                    An Insight into Our Story and Journey. Explore the unique blend of creativity and precision that
+                    defines our
+                    journey. Let's shape the future of your business together. </p>
+                <p>
+                    Tapplix stands out with a holistic approach to web and mobile app development, focusing on both
+                    exceptional aesthetics and superior functionality. We deliver high-quality programming while
+                    ensuring our digital products are not only visually appealing but also highly usable.</p>
 
-          </div>
-          <div class="botuiqe-img">
-            <img src="assets/images/services.jpg" width="100%" height="100%">
-          </div>
+            </div>
+            <div class="botuiqe-img">
+                <img src="assets/images/services.jpg" width="100%" height="100%">
+            </div>
         </div>
-      </section>
+    </section>
 
-    <section class="features-section pt-96" data-aos="fade-up" data-aos-duration="1500">
+    <section class="features-section overflow-hidden">
         <div class="container">
             <div class="text-center pb-sm-5 pb-3" data-aos="fade-right" data-aos-duration="1500">
                 <h2>Health<span>care</span></h2>
@@ -117,10 +312,7 @@
                     product. Our clients' products will stand out among hundreds of similar apps on the market.
                 </p>
             </div>
-            <div>
-                <!-- 1 -->
-             
-                <!-- 2 -->
+            <div class="web-view-feature">
                 <div class="feature-item pt-4">
                     <div class="text-content ps-lg-3 ps-0" data-aos="fade-right" data-aos-duration="1500">
                         <h3>Our<span>Approach</span></h3>
@@ -136,15 +328,15 @@
                         <img src="assets/images/OurApproach.jpg" alt="Full Management" width="100%">
                     </div>
                 </div>
-                <!-- 3 -->
+
                 <div class="feature-item">
-                  
+
                     <div class="image-content" data-aos="fade-right" data-aos-duration="1500">
                         <img src="assets/images/our-purpose.jpg" alt="Full Management" width="100%">
 
                     </div>
                     <div class="main-circle">
-                    <div class="circle"></div>
+                        <div class="circle"></div>
                     </div>
 
                     <div class="text-content ps-lg-3 ps-0" data-aos="fade-left" data-aos-duration="1500">
@@ -153,34 +345,36 @@
                             digital products that generate income, thereby helping businesses increase their return on
                             investment (ROI).</p>
                     </div>
-                 
+
                 </div>
-                  <!-- 4 -->
+
                 <div class="feature-item ">
-                   
+
                     <div class="text-content" data-aos="fade-right" data-aos-duration="1500">
                         <h3>Our <span>Method</span></h3>
                         <p>We follow a simple, three-step process:</p>
 
-                           <p class="pt-3">Step 1: Understanding the problem at hand</p> 
-                            
-                            <p class="pt-3">Step 2: Identifying and implementing the necessary solutions</p>
-                            
-                            <p class="pt-3">Step 3: Executing the solution while maintaining an exceptional standard of product quality</p>
+                        <p class="pt-md-3 pt-1">Step 1: Understanding the problem at hand</p>
+
+                        <p class="pt-md-3 pt-1">Step 2: Identifying and implementing the necessary solutions</p>
+
+                        <p class="pt-md-3 pt-1">Step 3: Executing the solution while maintaining an exceptional standard
+                            of
+                            product quality</p>
                     </div>
                     <div class="main-circle">
-                    <div class="circle"></div>
+                        <div class="circle"></div>
                     </div>
 
                     <div class="image-content ps-lg-3 ps-0" data-aos="fade-left" data-aos-duration="1500">
                         <img src="assets/images/OurMethod.jpg" alt="Full Management" width="100%">
 
                     </div>
-                  
+
                 </div>
-                <!-- 5 -->
+
                 <div class="feature-item ">
-                  
+
                     <div class="image-content" data-aos="fade-right" data-aos-duration="1500">
                         <img src="assets/images/OurServices.jpg" alt="Full Management" width="100%">
 
@@ -190,37 +384,131 @@
                     </div>
                     <div class="text-content ps-lg-3 ps-0" data-aos="fade-left" data-aos-duration="1500">
                         <h3>Our <span>Services</span></h3>
-                        <p>We consistently deliver high-quality products within the agreed-upon timeframe and budget.</p>
-                        <p>Moreover, our software development firm leverages our industry expertise to delve into the project's mechanics and provide a detailed solution. With the added advantages of lower rates on software development outsourcing, you can save up to 50% of your budget and reduce time-to-market while upholding the highest quality standards for your product.</p>
+                        <p>We consistently deliver high-quality products within the agreed-upon timeframe and budget.
+                        </p>
+                        <p>Moreover, our software development firm leverages our industry expertise to delve into the
+                            project's mechanics and provide a detailed solution. With the added advantages of lower
+                            rates on software development outsourcing, you can save up to 50% of your budget and reduce
+                            time-to-market while upholding the highest quality standards for your product.</p>
                     </div>
-                </div>  
+                </div>
             </div>
+            <!-- moblie-view -->
+            <div class="mobile-view-feature">
+                <!-- 1 -->
+                <div class="feature-item pt-4">
+                    <div class="mobile-main-circle">
+                        <div class="main-circle">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="feature-mobile-item">
+                            <div class="text-content ps-lg-3 ps-0" data-aos="fade-right" data-aos-duration="1500">
+                                <h3>Our<span>Approach</span></h3>
+                                <p>Tapplix programmers excel at developing web and mobile apps with optimal performance
+                                    and
+                                    flawless functionality. We employ the latest cutting-edge technologies and coding
+                                    practices
+                                    to ensure the creation of stable, secure, and scalable products.</p>
+                            </div>
+                            <div class="image-content ps-lg-3 ps-0" data-aos="fade-left" data-aos-duration="1500">
+                                <img src="assets/images/OurApproach.jpg" alt="Full Management" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="mobile-main-circle">
+                    <div class="main-circle">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="feature-mobile-item">
+                        <div class="text-content ps-lg-3 ps-0" data-aos="fade-left" data-aos-duration="1500">
+                            <h3>Our <span>Purpose</span></h3>
+                            <p>We are committed to assisting our clients in solving their business problems and
+                                developing
+                                digital products that generate income, thereby helping businesses increase their return
+                                on
+                                investment (ROI).</p>
+                        </div>
+                        <div class="image-content" data-aos="fade-right" data-aos-duration="1500">
+                            <img src="assets/images/our-purpose.jpg" alt="Full Management" width="100%">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="mobile-main-circle">
+                    <div class="main-circle">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="feature-mobile-item ">
+                        <div class="text-content" data-aos="fade-right" data-aos-duration="1500">
+                            <h3>Our <span>Method</span></h3>
+                            <p>We follow a simple, three-step process:</p>
+
+                            <p class="pt-md-3 pt-1">Step 1: Understanding the problem at hand</p>
+
+                            <p class="pt-md-3 pt-1">Step 2: Identifying and implementing the necessary solutions</p>
+
+                            <p class="pt-md-3 pt-1">Step 3: Executing the solution while maintaining an exceptional
+                                standard of
+                                product quality</p>
+                        </div>
+                        <div class="image-content ps-lg-3 ps-0" data-aos="fade-left" data-aos-duration="1500">
+                            <img src="assets/images/OurMethod.jpg" alt="Full Management" width="100%">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="mobile-main-circle">
+                    <div class="main-circle">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="feature-mobile-item ">
+                        <div class="text-content ps-lg-3 ps-0" data-aos="fade-left" data-aos-duration="1500">
+                            <h3>Our <span>Services</span></h3>
+                            <p>We consistently deliver high-quality products within the agreed-upon timeframe and
+                                budget.
+                            </p>
+                            <p>Moreover, our software development firm leverages our industry expertise to delve into
+                                the
+                                project's mechanics and provide a detailed solution. With the added advantages of lower
+                                rates on software development outsourcing, you can save up to 50% of your budget and
+                                reduce
+                                time-to-market while upholding the highest quality standards for your product.</p>
+                        </div>
+                        <div class="image-content" data-aos="fade-right" data-aos-duration="1500">
+                            <img src="assets/images/OurServices.jpg" alt="Full Management" width="100%">
+                        </div>
+                    </div>
+                </div>
 
 
+
+            </div>
         </div>
     </section>
-
-
-
-
 
     <footer class="footer-section">
         <div class="container">
           <div class="ftt_links">
             <div class="pb-4" data-aos="fade-right" data-aos-duration="1500">
-              <a class="text-decoration-none main_nav_logo" href="#"><img src="./assets/images/main-logo.png" alt=""></a>
+              <a class="text-decoration-none main_nav_logo" href="./index.html"><img src="./assets/images/main-logo.png" alt=""></a>
               <p class="font_18 ln_24 pt-4">Unlocking Innovation, One App at a Time</p>
               <div class="f_links mt-3"n style="flex-direction: row;">
-                <a class="d-flex align-items-center gap-2" href="#">
+                <a class="d-flex align-items-center gap-2" href="https://www.facebook.com/Tapplix/" target="_blank">
                   <div class="f_link_bx"><i class="fab fa-facebook-f"></i></div>
                 </a>
-                <a class="d-flex align-items-center gap-2" href="#">
+                <a class="d-flex align-items-center gap-2" href="https://www.linkedin.com/company/tapplix/" target="_blank">
                   <div class="f_link_bx"><i class="fab fa-linkedin-in"></i></div>
                 </a>
-                <a class="d-flex align-items-center gap-2" href="#">
+                <a class="d-flex align-items-center gap-2" href="https://www.instagram.com/tapplix/?igshid=ZWQyN2ExYTkwZQ%3D%3D" target="_blank">
                   <div class="f_link_bx"><i class="fab fa-instagram"></i></div>
                 </a>
-                <a class="d-flex align-items-center gap-2" href="#">
+                <a class="d-flex align-items-center gap-2" href="https://dribbble.com/Tapplix" target="_blank">
                   <div class="f_link_bx"><i class="fas fa-globe"></i></div>
                 </a>
                 
@@ -228,39 +516,39 @@
             </div>
             <div class="f_links" data-aos="fade-up" data-aos-duration="1500">
               <!-- <h2>Quick Links</h2> -->
-              <a href="#">Services</a>
-              <a href="#">Our Process</a>
-              <a href="#">Technologies</a>
-              <a href="#">Our Process</a>
+              <a href="./about-us.html">About</a>
+              <a href="./services.html">Services</a>
+              <a href="./our-technologies.html">Technologies</a>
+              <a href="./our-process.html">Our Process</a>
             </div>
             <div class="f_links" data-aos="fade-left" data-aos-duration="1500">
-              <!-- <h2>Contact</h2> -->
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a class="d-flex align-items-center gap-2" href="mailto:info@tapplix.tech">
                 <div class="f_link_bx"><i class="fas fa-envelope"></i></div>
                 <p>info@tapplix.tech</p>
               </a>
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a class="d-flex align-items-center gap-2" href="tel:+18003420989">
                 <div class="f_link_bx"><i class="fas fa-phone-alt"></i></div>
                 <p>+1 800 342 0989</p>
               </a>
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a target="_blank" class="d-flex align-items-center gap-2" href="https://wa.me/18003420989">
                 <div class="f_link_bx"><i class="fab fa-whatsapp"></i></div>
                 <p>+1 800 342 0989</p>
               </a>
             </div>
+            
           </div>
          
           <div class="footer-links">
             <p>© 2017-2023 Tapplix. All Rights Reserved</p>
             <div class="f_links" style="flex-direction: row; gap: 30px;">
               <!-- <h2>Contact</h2> -->
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a class="d-flex align-items-center gap-2" href="./privacy-policy.html">
                 <p>Privacy Policy</p>
               </a>
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a class="d-flex align-items-center gap-2" href="./terms-service.html">
                 <p>Terms of Use</p>
               </a>
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a class="d-flex align-items-center gap-2" href="./cookies-policy.html">
                 <p>Cookies Policy</p>
               </a>
             </div>
@@ -301,11 +589,60 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-  <!------------------------------- Custom Js ---------------------------------->
-  <script src="./assets/js/my_script.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <!------------------------------- Custom Js ---------------------------------->
+    <script src="./assets/js/my_script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var section = document.querySelector('#counter__number');
+            var counters = section.querySelectorAll('.count');
+
+            var observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+
+            var observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        counters.forEach(counter => {
+                            var originalValue = counter.getAttribute('data-original');
+                            var numericValue = parseFloat(originalValue.replace(/[^\d.-]/g, ''));
+                            var suffix = originalValue.replace(/[\d.-]/g, '');
+                            var currentValue = 0; // Start from 0
+                            var duration = 2000; // Duration of the counting effect in milliseconds
+                            var increment = numericValue / (duration / 10); // Calculate increment based on duration
+                            var interval = 10; // Interval for updating the count
+
+                            // Function to update the count smoothly
+                            var updateCount = () => {
+                                if (currentValue < numericValue) {
+                                    currentValue += increment;
+                                    counter.innerText = Math.ceil(currentValue) + suffix;
+                                    setTimeout(updateCount, interval);
+                                } else {
+                                    counter.innerText = numericValue.toLocaleString() + suffix;
+                                    // Add the 'finished' class to apply the final styles
+                                    counter.classList.add('finished');
+                                }
+                            };
+
+                            // Start the counting animation
+                            updateCount();
+                        });
+                        observer.unobserve(section);
+                    }
+                });
+            };
+
+            var observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            observer.observe(section);
+        });
+
+    </script>

@@ -22,13 +22,18 @@
 
 <body>
 
-    <!-- <section class="">
+    <section class="hero__video__sec other__page_hero">
         <div class="container">
-            <header>
+            <header data-aos="fade-down" data-aos-duration="1500">
                 <div class="main_nav_logo">
                     <a href="#"><img src="./assets/images/main-logo.png" alt="main-logo"></a>
                 </div>
-                <div class="nav__items">
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav__items" id="navItems">
                     <a href="./about-us.html">About Us</a>
                     <a href="./services.html">Services</a>
                     <a href="./our-technologies.html">Technology</a>
@@ -37,19 +42,16 @@
                 </div>
             </header>
         </div>
-    </section>
-    <section class="about-hero">
-        <div class="container">
-            <div class="title container">
-                <h2 class="font_60 text-center pt-5 text-white">Our  <span>Technologies</span> </h2>
-                <p class="about-p font_18 fw_400 mt-3 mb-3 text-white ln_28">
-                    Tapplix works under various modern technologies for effective, scalable, and future-proof custom software development.
-                </p>
+            <div class="video_bx__parent">
+                <div class="hero__video_bx">
+                    <img height="auto" width="100%" src="./assets/images/web_app.webp" alt="">
+                    <div class="video__bx_content">
+                        <h1 class="font_60 fw_600 text-white" data-aos="fade-left" data-aos-duration="1500">Our  <span>Technologies</span></h1>
+                        <p class="text-white font_20 mt-3 ln_28" data-aos="fade-right" data-aos-duration="1500"> Tapplix works under various modern technologies for effective, scalable, and future-proof custom software development.<p>                  </div>
+                </div>
             </div>
-
-        </div>
-    </section> -->
-    <section class="hero__video__sec other__page_hero">
+    </section>
+    <section class="hero__video__sec other__page_hero d-none">
         <div class="container">
             <header data-aos="fade-down" data-aos-duration="1500">
                 <div class="main_nav_logo">
@@ -81,13 +83,13 @@
         <div class="container">
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Front-End Technologies</button>
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Front-End <span>Technologies</span></button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Back-End Technologies</button>
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Back-End <span>Technologies</span></button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mobile Technologies</button>
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mobile <span>Technologies</span></button>
                 </li>
                 <li class="nav-item" role="presentation">
                   <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" >Databases</button>
@@ -144,7 +146,7 @@
                         </li>
                         <li>
                             <a href="https://jquery.com/" target="_blank" class="logo-holder">
-                                <img class="img-responsive lazy" src="https://www.arhamsoft.com/assets/img/stack-logos/jquery.svg" alt="JQuery">
+                                <img  class="img-responsive lazy jquary-img" src="https://www.arhamsoft.com/assets/img/stack-logos/jquery.svg" alt="JQuery">
                             </a>
                             <h5>jQuery</h5>
                         </li>
@@ -322,7 +324,7 @@
                         </li>
                         <li>
                             <a href="#" class="logo-holder">
-                                <img class="img-responsive lazy" src="https://www.arhamsoft.com/assets/img/stack-logos/oracle.svg" alt="Oracle">
+                                <img class="img-responsive lazy jquary-img" src="https://www.arhamsoft.com/assets/img/stack-logos/oracle.svg" alt="Oracle">
                             </a>
                             <h5>Oracle Database</h5>
                         </li>
@@ -405,19 +407,19 @@
         <div class="container">
           <div class="ftt_links">
             <div class="pb-4" data-aos="fade-right" data-aos-duration="1500">
-              <a class="text-decoration-none main_nav_logo" href="#"><img src="./assets/images/main-logo.png" alt=""></a>
+              <a class="text-decoration-none main_nav_logo" href="./index.html"><img src="./assets/images/main-logo.png" alt=""></a>
               <p class="font_18 ln_24 pt-4">Unlocking Innovation, One App at a Time</p>
               <div class="f_links mt-3"n style="flex-direction: row;">
-                <a class="d-flex align-items-center gap-2" href="#">
+                <a class="d-flex align-items-center gap-2" href="https://www.facebook.com/Tapplix/" target="_blank">
                   <div class="f_link_bx"><i class="fab fa-facebook-f"></i></div>
                 </a>
-                <a class="d-flex align-items-center gap-2" href="#">
+                <a class="d-flex align-items-center gap-2" href="https://www.linkedin.com/company/tapplix/" target="_blank">
                   <div class="f_link_bx"><i class="fab fa-linkedin-in"></i></div>
                 </a>
-                <a class="d-flex align-items-center gap-2" href="#">
+                <a class="d-flex align-items-center gap-2" href="https://www.instagram.com/tapplix/?igshid=ZWQyN2ExYTkwZQ%3D%3D" target="_blank">
                   <div class="f_link_bx"><i class="fab fa-instagram"></i></div>
                 </a>
-                <a class="d-flex align-items-center gap-2" href="#">
+                <a class="d-flex align-items-center gap-2" href="https://dribbble.com/Tapplix" target="_blank">
                   <div class="f_link_bx"><i class="fas fa-globe"></i></div>
                 </a>
                 
@@ -425,39 +427,39 @@
             </div>
             <div class="f_links" data-aos="fade-up" data-aos-duration="1500">
               <!-- <h2>Quick Links</h2> -->
-              <a href="#">Services</a>
-              <a href="#">Our Process</a>
-              <a href="#">Technologies</a>
-              <a href="#">Our Process</a>
+              <a href="./about-us.html">About</a>
+              <a href="./services.html">Services</a>
+              <a href="./our-technologies.html">Technologies</a>
+              <a href="./our-process.html">Our Process</a>
             </div>
             <div class="f_links" data-aos="fade-left" data-aos-duration="1500">
-              <!-- <h2>Contact</h2> -->
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a class="d-flex align-items-center gap-2" href="mailto:info@tapplix.tech">
                 <div class="f_link_bx"><i class="fas fa-envelope"></i></div>
                 <p>info@tapplix.tech</p>
               </a>
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a class="d-flex align-items-center gap-2" href="tel:+18003420989">
                 <div class="f_link_bx"><i class="fas fa-phone-alt"></i></div>
                 <p>+1 800 342 0989</p>
               </a>
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a target="_blank" class="d-flex align-items-center gap-2" href="https://wa.me/18003420989">
                 <div class="f_link_bx"><i class="fab fa-whatsapp"></i></div>
                 <p>+1 800 342 0989</p>
               </a>
             </div>
+            
           </div>
          
           <div class="footer-links">
             <p>© 2017-2023 Tapplix. All Rights Reserved</p>
             <div class="f_links" style="flex-direction: row; gap: 30px;">
               <!-- <h2>Contact</h2> -->
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a class="d-flex align-items-center gap-2" href="./privacy-policy.html">
                 <p>Privacy Policy</p>
               </a>
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a class="d-flex align-items-center gap-2" href="./terms-service.html">
                 <p>Terms of Use</p>
               </a>
-              <a class="d-flex align-items-center gap-2" href="#">
+              <a class="d-flex align-items-center gap-2" href="./cookies-policy.html">
                 <p>Cookies Policy</p>
               </a>
             </div>

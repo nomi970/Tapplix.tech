@@ -17,3 +17,9 @@ $(window).on('scroll', function() {
         }
     });
 });
+const hamburger = document.getElementById('hamburger');
+const navItems = document.getElementById('navItems');
+
+hamburger.addEventListener('click', () => {
+    navItems.classList.toggle('show');
+});
