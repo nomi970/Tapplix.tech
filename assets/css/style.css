@@ -1571,4 +1571,7 @@ header {
   .video_bx__parent img{
     height: 50vh !important;
   }
+  .video__bx_content{
+    padding-top: 50px;
+  }
 }
