@@ -1559,6 +1559,10 @@ header {
     left: 0 !important;
   }
   .video__bx_content .font_60{
-    font-size: 35px;
+    font-size: 35px !important;
+  }
+  .video__bx_content .font_20 {
+    font-size: 18px !important;
+    line-height: 28px;
   }
 }
