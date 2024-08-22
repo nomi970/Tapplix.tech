@@ -1565,4 +1565,10 @@ header {
     font-size: 18px !important;
     line-height: 28px;
   }
+  .other__page_hero .hero__video_bx::after{
+    height: 50vh !important;
+  }
+  .video_bx__parent img{
+    height: 50vh !important;
+  }
 }
