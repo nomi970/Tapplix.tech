@@ -1296,10 +1296,11 @@ width:95%;
 }
 
 .other__page_hero .hero__video_bx::after{
-  height: 60vh !important;
+  height: 70vh !important;
+  background-color: rgb(0 0 0 / 66%);
 }
 .video_bx__parent img{
-  height: 60vh !important;
+  height: 70vh !important;
 }
 .ser_sec{
   padding-top: 50px;
