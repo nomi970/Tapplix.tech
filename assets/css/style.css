@@ -75,7 +75,7 @@ header{
 }
 body{
     background-color: white;
-    font-family: Poppins;
+    font-family: Poppins !important;
 }
 .hero__video_bx{
     border-radius: 12px;
@@ -1191,109 +1191,6 @@ transition: all 1s ease;
   
 
 
-.block_top{
-    background:#213F29;
-    height:400px;
-    color:#FAEBBB;
-    display: flex;
-justify-content: center;
-align-items: center;
-    margin-bottom:100px;
-    margin-top:50px;
-    border-radius:50px;
-}
-.next_block{
-    background:#213F29;
-    height:400px;
-    color:#FAEBBB;
-    display: flex;
-justify-content: center;
-align-items: center;
-    margin-bottom:50px;
-    margin-top:150px; 
-    border-radius:50px;
-}
-.cards12 {
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 70vh;
-margin-bottom:90px;
-}
-.custom-card {
-position: absolute;
-width: 100%;
-top:0px; 
-height: 70vh;
-background-color:  #F2F2F7;
-color: black;
-margin-bottom:50px;
-display: flex;
-gap: 30px;
-justify-content: center;
-align-items: center;
-border-radius:50px;
-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
-padding: 50px 50px;
-}
-.card1{
-
-}
-.card2{
-top:40px; 
-}
-.card3{
-top:80px; 
-}
-.opacity{
--moz-transition:0.4s ease;
--ms-transition:0.4s ease;
--o-transition:0.4s ease;
-transition:0.4s ease;
--webkit-transition:0.4s ease;
-opacity:0.6;
-}
-.scale{
-moz-transition:0.4s ease;
--ms-transition:0.4s ease;
--o-transition:0.4s ease;
-transition:0.4s ease;
--webkit-transition:0.4s ease;
-width:95%;
-}
-.nav2{
-    display: block;
-    position: absolute;
-    left:30px;
-    top:45%;
-    z-index: 10;
-    
-}
-.nav2 li{
-        padding:2px;
-    }
-.nav2 li a{
-    text-decoration: none;
-    list-style: none;
-}
-
-.nav2 .active{
-    background:#FAEBBB;
-    color:#213F29;
-}
-.custom-card img{
-  height: 300px;
-  border-radius: 12px;
-}
-.custom-card__content{
-  width: 100%;
-  max-width: 600px;
-}
-.overlaped_sec{
-  position: relative !important;
-  padding: 50px 0px;
-}
 
 .other__page_hero .hero__video_bx::after{
   height: 70vh !important;
@@ -1426,17 +1323,7 @@ header {
   .sample-card{
     width: 100%;
   }
-  .custom-card{
-    flex-wrap: wrap;
-  }
-  .custom-card{
-    height: fit-content;
-    padding: 35px 35px;
-    flex-direction: column-reverse;
-  }
-  .custom-card{
-    position: unset;
-  }
+
   .overlaped_sec .cards12{
     flex-wrap: wrap;
     height: unset;
@@ -1446,9 +1333,6 @@ header {
   }
   .overlaped_sec{
     padding: 50px 0px 0px 0px;
-  }
-  .custom-card {
-    border-radius: 20px;
   }
   .cards12{
     margin-bottom: 0;
@@ -1521,9 +1405,6 @@ header {
   }
   .font_40 {
     font-size: 25px;
-  }
-  .custom-card img {
-    height: 200px;
   }
   section,footer{
     overflow: hidden;

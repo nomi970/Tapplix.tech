@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/css/animation.css"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Tapplix</title>
+    <style>
+      /* ---- reset ---- */
+
+/* body {
+margin: 0;
+font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+display: block;
+vertical-align: bottom;
+} */
+
+/* ---- particles.js container ---- */
+.particles-js-canvas-el{
+  position: absolute !important;
+  top: 0 !important;
+}
+#particles-js {
+position: absolute;
+width: 100%;
+height: 100vh;
+/* background-color: #b61924; */
+z-index: 1;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+background: #000022;
+position: absolute;
+top: 48px;
+left: 0;
+width: 80px;
+color: #13E8E9;
+font-size: .8em;
+text-align: left;
+text-indent: 4px;
+line-height: 14px;
+padding-bottom: 2px;
+font-family: Helvetica, Arial, sans-serif;
+font-weight: bold;
+}
+
+.js-count-particles{
+font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+-webkit-user-select: none;
+}
+
+#stats{
+border-radius: 3px 3px 0 0;
+overflow: hidden;
+}
+
+.count-particles{
+border-radius: 0 0 3px 3px;
+}
+
+
+
+
+.stage{
+    position: relative;
+}
+
+html, body, .stage, .ring, .img {
+  width:100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  user-select:none;
+}
+
+
+
+.stage div, svg {
+  position: absolute;
+}
+
+.con {
+  perspective: 2000px;
+  width: 300px;
+  height: 400px;  
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+}
+/* .ring:nth-child(1){
+    background-image: url(./assets/images/web_app.webp);
+} */
+.img {
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+}
+
+.img1 { background-image: url('./assets/images/web_app.webp'); }
+.img2 { background-image: url('./assets/images/services.jpg'); }
+.img3 { background-image: url('./assets/images/achivements.jpg'); }
+.img4 { background-image: url('./assets/images/our-purpose.jpg'); }
+.img5 { background-image: url('./assets/images/OurApproach.jpg'); }
+.img6 { background-image: url('./assets/images/OurMethod.jpg'); }
+.img7 { background-image: url('./assets/images/small_business.jpg'); }
+.img8 { background-image: url('./assets/images/large_business.jpg'); }
+.img9 { background-image: url('./assets/images/start_up_business.jpg'); }
+.img10 { background-image: url('./assets/images/web_app10.webp'); }
+
+  </style>
+</head>
+<body>
+  
+  
+  <section class="hero__video__sec">
+    <div id="particles-js"></div>
+    <div class="container">
+        <header data-aos="fade-down" data-aos-duration="1500">
+            <div class="main_nav_logo">
+                <a href="./index.html"><img src="./assets/images/main-logo.png" alt="main-logo"></a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav__items" id="navItems">
+                <a href="./about-us.html">About Us</a>
+                <a href="./services.html">Services</a>
+                <a href="./our-technologies.html">Technology</a>
+                <a href="./our-process.html">Our Process</a>
+                <a href="./contact-us.html">Contact Us</a>
+            </div>
+        </header>
+    </div>
+    <div class="video_bx__parent">
+        <div class="hero__video_bx">
+            <video width="100%" autoplay muted loop>
+                <source src="./assets/images/hero_video.mp4" type="video/mp4">
+            </video>
+            <div class="video__bx_content">
+                <h1 class="font_60 fw_600 text-white" data-aos="fade-left" data-aos-duration="1500">We Empower </h1>
+                <p class="text-white font_20 mt-3 ln_28" data-aos="fade-right" data-aos-duration="1500">
+                    Big brands, and visionary thinkers with software solutions that conquer business challenges,
+                    enhance productivity, and drive growth. Partner with us to transform your vision into reality.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="transform_bg skew-active">
+        <div class="container">
+            <img width="100%" data-aos="fade-up" data-aos-duration="3000" src="./assets/images/tm3.png" alt="transform_bg">
+        </div>
+    </section>
+    <div class="title" style="display: flex; justify-content: center;text-align: center;align-items: center; margin: 0 auto;margin-top: 50px;">
+        <h2 class="font_50 fw_700 text-black" data-aos="fade-right" data-aos-duration="1500" style="color: black !important;">Our Projects</h2> 
+    </div>
+    <div class="stage">
+        <div class="con">
+          <div class="ring">
+            <div class="img img1"></div>
+            <div class="img img2"></div>
+            <div class="img img3"></div>
+            <div class="img img4"></div>
+            <div class="img img5"></div>
+            <div class="img img6"></div>
+            <div class="img img7"></div>
+            <div class="img img8"></div>
+            <div class="img img9"></div>
+            <div class="img img10"></div>
+            
+          </div>
+        </div>
+      </div>
+      
+ 
+    <section class="tplx__services" style="position: relative;">
+      
+        <div class="container">
+            <div class="tplx__services_main">
+                <div class="title">
+                    <h2 class="font_50 fw_700 text-black" data-aos="fade-right" data-aos-duration="1500" style="color: black !important;">Our expertise</h2>
+                    <p class="font_20 fw_400 mt-3 ln_28" data-aos="fade-up" data-aos-duration="1500">We analyze your product concept and business specifics, and bind these conclusions with industry standards, market trends, and appropriate tech stacks. Our software development firm builds top products for a particular industry, namely:</p>
+                </div>
+                <div class="services__main_tbz">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <!-- Button for Tab 1 -->
+                            <button class="nav-link active" id="nav-tab1" data-bs-toggle="tab" data-bs-target="#nav-content1" type="button" role="tab" aria-controls="nav-content1" aria-selected="true">
+                                Healthcare
+                                
+                            </button>
+                            <!-- Button for Tab 2 -->
+                            <button class="nav-link" id="nav-tab2" data-bs-toggle="tab" data-bs-target="#nav-content2" type="button" role="tab" aria-controls="nav-content2" aria-selected="false">
+                                On-Demand Economy
+                               
+                            </button>
+                            <!-- Add more buttons for the remaining tabs -->
+                            <!-- Continue adding buttons for all 11 tabs -->
+                            <button class="nav-link" id="nav-tab3" data-bs-toggle="tab" data-bs-target="#nav-content3" type="button" role="tab" aria-controls="nav-content3" aria-selected="false">
+                                Social Networking
+                                
+                            </button>
+                            <button class="nav-link" id="nav-tab4" data-bs-toggle="tab" data-bs-target="#nav-content4" type="button" role="tab" aria-controls="nav-content4" aria-selected="false">
+                                Finance
+                               
+                            </button>
+                            <button class="nav-link" id="nav-tab5" data-bs-toggle="tab" data-bs-target="#nav-content5" type="button" role="tab" aria-controls="nav-content5" aria-selected="false">
+                                E-commerce
+                                
+                            </button>
+                            <button class="nav-link" id="nav-tab6" data-bs-toggle="tab" data-bs-target="#nav-content6" type="button" role="tab" aria-controls="nav-content6" aria-selected="false">
+                                Hospitality & Food
+                               
+                            </button>
+                            <button class="nav-link" id="nav-tab7" data-bs-toggle="tab" data-bs-target="#nav-content7" type="button" role="tab" aria-controls="nav-content7" aria-selected="false">
+                                Entertainment & Media
+                               
+                            </button>
+                            <button class="nav-link" id="nav-tab8" data-bs-toggle="tab" data-bs-target="#nav-content8" type="button" role="tab" aria-controls="nav-content8" aria-selected="false">
+                                Real Estate
+                               
+                            </button>
+                            <button class="nav-link" id="nav-tab9" data-bs-toggle="tab" data-bs-target="#nav-content9" type="button" role="tab" aria-controls="nav-content9" aria-selected="false">
+                                Travel
+                                
+                            </button>
+                            <button class="nav-link" id="nav-tab10" data-bs-toggle="tab" data-bs-target="#nav-content10" type="button" role="tab" aria-controls="nav-content10" aria-selected="false">
+                                Human Resources
+                               
+                            </button>
+                            <button class="nav-link" id="nav-tab11" data-bs-toggle="tab" data-bs-target="#nav-content11" type="button" role="tab" aria-controls="nav-content11" aria-selected="false">
+                                Transportation
+                               
+                            </button>
+                        </div>
+                    </nav>
+                
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" data-aos="fade-right" data-aos-duration="1500" id="nav-content1" role="tabpanel" aria-labelledby="nav-tab1">
+                            <h2 class="font_30 fw_400 text-black pb-2 text-white ">Healthcare</h2>
+                            <p class="font_16 fw_300 ln_24 text-white">EHR, IoT-enabled, telehealth, vital tracking, appointment booking, e-prescriptions, etc. - apps that we build with HIPAA standards.</p>
+                            <ul class="mt-3">
+                                <li class="font_16 fw_300 ln_24 text-white">Optimization of hospital activity</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Assistance in diagnosis</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Healthy living</li>
+                                <li class="font_16 fw_300 ln_24 text-white">mHealth</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Reminders and alerts</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Healthcare provider management</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Information portals</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Data analytics</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Supply chain management</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="nav-content2" role="tabpanel" aria-labelledby="nav-tab2">
+                            <h2 class="font_30 fw_400 text-black pb-2 text-white">On-Demand Economy</h2>
+                            <p class="font_16 fw_300 ln_24 text-white">Our software development company has expertise in creating systems with operations in 500+ US cities; we can build complex and on-demand delivery software.</p>
+                            <ul class="mt-3">
+                                <li class="font_16 fw_300 ln_24 text-white">On-demand food delivery applications</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Transportation and logistics apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Taxi services</li>
+                                <li class="font_16 fw_300 ln_24 text-white">House cleaning and handyman apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Car rental services</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Flower and gift delivery apps</li>
+                            </ul>
+                        </div>
+                        <!-- Add more content divs for the remaining tabs -->
+                        <div class="tab-pane fade" id="nav-content3" role="tabpanel" aria-labelledby="nav-tab3">
+                            <h2 class="font_30 fw_400 text-black pb-2 text-white">Social Networking</h2>
+                            <p class="font_16 fw_300 ln_24 text-white">We develop apps for communication and interaction, content sharing, and interest-based networking, all while complying with data security standards.</p>
+                            <ul class="mt-3">
+                                <li class="font_16 fw_300 ln_24 text-white">Networks for consumer reviews</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Networks for consumer reviews</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Bookmarking networks and content curation tools</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Blogging and publishing platforms</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Interest-based networks</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Anonymous social networks</li>
+                                <li class="font_16 fw_300 ln_24 text-white">File sharing applications</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Highly loaded live-streaming platforms</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Social networks for a particular target audience</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="nav-content4" role="tabpanel" aria-labelledby="nav-tab4">
+                            <h2 class="font_30 fw_400 text-black pb-2 text-white">Finance</h2>
+                            <p class="font_16 fw_300 ln_24 text-white">Personal finance management, trading, e-wallets, complex banking mobile software, etc. - solutions we have built to automate and digitize the finance sector.</p>
+                            <ul class="mt-3">
+                                <li class="font_16 fw_300 ln_24 text-white">Banking apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Financial analytics</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Integration with third-party services</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Fraud protection</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Self-service portals</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Personal wallets</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Currency exchanges</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Trading platforms</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Wealth management apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="nav-content5" role="tabpanel" aria-labelledby="nav-tab5">
+                            <h2 class="font_30 fw_400 text-black pb-2 text-white">E-commerce</h2>
+                            <p class="font_16 fw_300 ln_24 text-white">Complex marketplaces, online shopping apps, and sites that utilize modern payment methods - areas of expertise for our software development company.</p>
+                            <ul class="mt-3">
+                                <li class="font_16 fw_300 ln_24 text-white">Dropshipping e-commerce apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Crowdfunding platforms</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Service-based e-tailer platforms</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Online storefronts</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Online marketplaces</li>
+                                <li class="font_16 fw_300 ln_24 text-white">M-commerce</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Wholesale and warehouse online catalogs</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Private label manufacturing software</li>
+                                <li class="font_16 fw_300 ln_24 text-white">White label software</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Subscription services</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="nav-content6" role="tabpanel" aria-labelledby="nav-tab6">
+                            <h2 class="font_30 fw_400 text-black pb-2 text-white">Hospitality & Food</h2>
+                            <p class="font_16 fw_300 ln_24 text-white">Digitalization of the HoReCa industry, namely hotels, restaurants, and cafes - solutions our software development company has built that include the latest functionality.</p>
+                            <ul class="mt-3">
+                                <li class="font_16 fw_300 ln_24 text-white">Hotel (accommodation) search engines and booking apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Hospitality operations platforms for hotel management</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Guest experience management platforms</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Reservation software</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Online booking for tours and activities</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Restaurant and recipe management platforms</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Discount and loyalty apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Self-service applications for hotel guests</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Food ordering and delivery apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="nav-content7" role="tabpanel" aria-labelledby="nav-tab7">
+                            <h2 class="font_30 fw_400 text-black pb-2 text-white">Entertainment & Media</h2>
+                            <p class="font_16 fw_300 ln_24 text-white">Products rich with media, real-time streaming services, video and audio apps - unique solutions delivered by our software development company.</p>
+                            <ul class="mt-3">
+                                <li class="font_16 fw_300 ln_24 text-white">Entertainment websites</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Music and video streaming services</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Media synchronization apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">News content creation and publishing platforms</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Book and document sharing platforms</li>
+                                <li class="font_16 fw_300 ln_24 text-white">News and media monitoring apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="nav-content8" role="tabpanel" aria-labelledby="nav-tab8">
+                            <h2 class="font_30 fw_400 text-black pb-2 text-white">Real Estate</h2>
+                            <p class="font_16 fw_300 ln_24 text-white">Apartment-listing aggregators, property value and investment estimators, and similar apps - apps we create with a smooth flow and high security.</p>
+                            <ul class="mt-3">
+                                <li class="font_16 fw_300 ln_24 text-white">Online real estate auctions</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Online home value estimation platforms</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Search apps for upcoming open houses</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Real estate investment platforms</li>
+                                <li class="font_16 fw_300 ln_24 text-white">House hunting apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Apartment-finder apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Apps for centralizing communication between buyers and sellers</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Apps for planning floor layouts and room design</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Online signature apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="nav-content9" role="tabpanel" aria-labelledby="nav-tab9">
+                            <h2 class="font_30 fw_400 text-black pb-2 text-white">Travel</h2>
+                            <p class="font_16 fw_300 ln_24 text-white">Location navigation and mapping, place recommendation, trip-planning, and complex tools for travel agents - digital projects our software development company can create.</p>
+                            <ul class="mt-3">
+                                <li class="font_16 fw_300 ln_24 text-white">Online ticket booking apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Taxi booking and ride-sharing apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Vehicle rental booking and virtual tour apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Auto check-in and seat booking apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Services for finding and booking flights</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Apps for finding and booking accommodations</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Apps for city tours and navigation</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Translation applications</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Public transportation apps</li>
+                                <!-- <li class="font_16 fw_300 ln_24 text-white">Currency converter apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Hotel booking apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Travel search engines</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Hotel and restaurant review services</li> -->
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="nav-content10" role="tabpanel" aria-labelledby="nav-tab10">
+                            <h2 class="font_30 fw_400 text-black pb-2 text-white">Human Resources</h2>
+                            <p class="font_16 fw_300 ln_24 text-white">Complex onboarding solutions, interview platforms, evaluation and online training, etc. - software we can develop to automate operation, reach KPIs in the HR area.</p>
+                            <ul class="mt-3">
+                                <li class="font_16 fw_300 ln_24 text-white">Individual training apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Activity report apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Time and attendance tracking for teams</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Software for job posting and applicant tracking</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Human resource information systems</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Experience management platforms</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Applicant tracking, recruitment, and onboarding software</li>
+                                <!-- <li class="font_16 fw_300 ln_24 text-white">Training and documentation tools for employee onboarding</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Pre-employment testing software</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Staff holiday and leave planners</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Professional networks</li> -->
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="nav-content11" role="tabpanel" aria-labelledby="nav-tab11">
+                            <h2 class="font_30 fw_400 text-black pb-2 text-white">Transportation</h2>
+                            <p class="font_16 fw_300 ln_24 text-white">Our software development company provides services to reduce costs and enhance service velocity in transportation and logistics-related domains.</p>
+                            <ul class="mt-3">
+                                <li class="font_16 fw_300 ln_24 text-white">Vehicle tracking and invoicing apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Transportation workflow management apps</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Apps for fixed and fluid transit planning</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Route planning and optimization software</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Public transportation mapping interfaces</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Mailroom management & package tracking software</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Software for shipping refunds</li>
+                                <li class="font_16 fw_300 ln_24 text-white">Software for logistics, transport, and delivery management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </section>
+    <div class="Looking__sec" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container">
+            <div class="Looking__main">
+                <div class="title">
+                    <h2 class="font_60 fw_700 text-white">Award-winning software excellence</h2>
+                    <p class="font_18 fw_400 mt-3 text-white">We analyze your product concept and business specifics, and bind these conclusions with industry standards, market trends, and appropriate tech stacks. Our software development firm builds top products for a particular industry, namely:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="Looking_company_sec" data-aos="fade-down" data-aos-duration="1500">
+        <video width="100%" autoplay muted loop>
+            <source src="./assets/images/hero_video.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <div class="title">
+                <h2 class="font_60 fw_700 text-white">Looking for a software development company?</h2>
+                <p class="font_18 fw_400 mt-3 text-white ln_24">Tapplix is the best option for you. Book a free consultation to get an accurate time and cost estimation for your project.</p>
+                <button class="btn btn--liquidBtn" style="margin: 0 auto;margin-top: 50px;">
+                    <span>Contact us</span>
+                    <div class="btn--liquidBtn--liquid">
+                    </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container ser_sec">
+        <div class="title" data-aos="fade-right" data-aos-duration="1500">
+            <h2 class="font_50 fw_700" style="color: black !important;">How We Help with Development</h2>
+            <p class="font_20 fw_400 mt-3 ln_24">Our software development firm primarily focuses on adding extra value to your business, which results in higher profitability and company evaluation.</p>
+        </div>
+        <div class="space-holder">
+          <div class="sticky">
+            <div class="horizontal">
+              <section role="feed" class="cards">
+                <article class="sample-card d-flex">
+                    <img src="./assets/images/web_app.webp" alt="">
+                    <div class="w-100 ex__padd">
+                        <h2 class="font_30 fw_700 text-black pb-2">Web Application Development</h2>
+                        <p class="font_18 fw_400 mb-3">By using Scrum, Kanban, or Lean methodology, our IT development company delivers functional and stable applications on time, even in a constantly changing business environment. Our web apps solve a problem, are easy to use, and look stunning.</p>
+                        <button class="btn btn--liquidBtn" style="margin: 0 auto;">
+                            <span>Read More</span>
+                            <div class="btn--liquidBtn--liquid">
+                            </button>
+                    </div>
+                    
+                </article>
+                <article class="sample-card d-flex">
+                    <img src="./assets/images/app_dev.webp" alt="">
+                    <div class="w-100 ex__padd">
+                        <h2 class="font_30 fw_700 text-black pb-2">Mobile App Developmet</h2>
+                        <p class="font_16 fw_500 mb-3">We are a software development company that has immense experience in creating feature-rich and high-performing native applications for iOS and Android platforms. We certainly keep track of the latest technical standards and design recommendations from Apple and Google.</p>
+                        <button class="btn btn--liquidBtn" style="margin: 0 auto;">
+                            <span>Read More</span>
+                            <div class="btn--liquidBtn--liquid">
+                            </button>
+                    </div>
+                    
+                </article>
+                <article class="sample-card d-flex">
+                    <img src="./assets/images/dedicated_team.webp" alt="">
+                    <div class="w-100 ex__padd">
+                        <h2 class="font_30 fw_700 text-black pb-2">Dedicated Development Team</h2>
+                        <p class="font_16 fw_500 mb-3">We provide expert software developers for your projects, ensuring effortless communication that makes it feel like your IT team is just next door. Additionally, we specialize in smoothly integrating remote developers into your IT department, enhancing your team’s capabilities.</p>
+                        <button class="btn btn--liquidBtn" style="margin: 0 auto;">
+                            <span>Read More</span>
+                            <div class="btn--liquidBtn--liquid">
+                            </button>
+                    </div>
+                    
+                </article>
+                <article class="sample-card d-flex">
+                    <img src="./assets/images/testing_qa.webp" alt="">
+                    <div class="w-100 ex__padd">
+                        <h2 class="font_30 fw_700 text-black pb-2">Software Testing & QA</h2>
+                        <p class="font_16 fw_500 mb-3">By using Scrum, Kanban, or Lean methodology, our IT development company delivers functional and stable applications on time, even in a constantly changing business environment. Our web apps solve a problem, are easy to use, and look stunning.</p>
+                        <button class="btn btn--liquidBtn" style="margin: 0 auto;">
+                            <span>Read More</span>
+                            <div class="btn--liquidBtn--liquid">
+                            </button>
+                    </div>
+                    
+                </article>
+               
+                
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="controls"></div>
+      <section class="why_choose_Tapplix_sec">
+        <div class="">
+            <div class="why_choose_Tapplix_mian">
+                <div class="title container" data-aos="fade-left" data-aos-duration="1500">
+                    <h2 class="font_50 fw_700 text-black" style="color: black !important">Why do clients choose Tapplix?</h2>
+                    <p class="font_20 fw_400 mt-3 mb-4 ln_24">Our software development company is 100% committed to every project we take on. We are an engineering company that understands the needs of each type of client - a small business owner or a start-up, mid-sized company, or a large business. Any way about it, we provide outsourcing software development services in a way that will achieve business goals and reach the necessary KPIs on time and cost-efficiently.</p>
+                </div>
+                  <div class="section">
+                    <div class="video-visual">
+                      <video
+                        class="video"
+                        autoplay
+                        loop
+                        muted
+                        poster=""
+                        role="none"
+                        aria-label="background gradient animation"
+                      >
+                        <source
+                          src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/dynamic-content-lockups-v2/assets/bg-gradient-animation.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <div class="section-wrapper container">
+                      <div class="content-wrapper">
+                        <div class="content content-1">
+                          <div class="mobile-visual">
+                            <img
+                              class="card-img"
+                              src="./assets/images/large.png"
+                              alt="Fantasy warrior  - Video game character"
+                            />
+                          </div>
+                          <div class="meta" data-aos="fade-left" data-aos-duration="1500">
+                            <h2 class="headline font_30 fw_700" style="color: black !important;">
+                                Large Businesses
+                            </h2>
+                            <ul class="mt-3">
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Polished software development processes to deliver projects on time and within budget</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Dedicated and scalable software development team for each project</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Clear and transparent communication during entire software development lifecycle</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Solid technical expertise and a strong sense of business operations</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Our software development company aligns the capacity of the development team with project needs</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Hiring, retention, firing processes, and related compensations are on our side</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Large enterprise clients in our portfolio since 2017</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="content content-2">
+                          <div class="mobile-visual">
+                            <img
+                              class="card-img"
+                              src="./assets/images/medium.png"
+                              alt="Green haired ninja in armor - Video game character"
+                            />
+                          </div>
+                          <div class="meta" data-aos="fade-left" data-aos-duration="1500">
+                            <h2 class="headline font_30 fw_700" style="color: black !important;">
+                                Medium Businesses
+                            </h2>
+                            <ul class="mt-3">
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Our software development company doesn’t just code, but also helps improve the business concept</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">The client remains focused on business, while we create the software from scratch</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Polished software development processes to deliver projects on time and within budget</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Dedicated and scalable software development team for each project</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Transparent communication during entire software development lifecycle</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Medium business clients in our portfolio since 2017</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="content content-3">
+                          <div class="mobile-visual">
+                            <img
+                              class="card-img"
+                              src="./assets/images/small.png"
+                              alt="Female warrior in armor - Video game character"
+                            />
+                          </div>
+                          <div class="meta" data-aos="fade-left" data-aos-duration="1500">
+                            <h2 class="headline font_30 fw_700" style="color: black !important;">
+                                Small Businesses
+                            </h2>
+                            <ul class="mt-3">
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Get a detailed app development or redevelopment plan from our software development company</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Obtain technical and business support for a small project, all the way up to consistent business growth</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Potential risk minimization and ability to overcome a lack of resources</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">We provide high-quality standards and best approaches included in software development to remove any potential project discrepancies and predict challenges</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Transparent communication during entire software development lifecycle</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Small business clients in our portfolio since 2017</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="content content-4">
+                          <div class="mobile-visual">
+                            <img
+                              class="card-img"
+                              src="./assets/images/start.png"
+                              alt="Agile warrior - Video game character"
+                            />
+                          </div>
+                          <div class="meta" data-aos="fade-left" data-aos-duration="1500">
+                            <h2 class="headline font_30 fw_700" style="color: black !important;">
+                                Start-ups
+                            </h2>
+                            <ul class="mt-3">
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Client obtains a team that transforms the idea into a product, and helps to grow the start-up into a large business</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">A start-up in our portfolio that evolved into a large business with 4,000+ workers alongside the Tapplix support</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">Time-tested processes that allow our software development company to create a Minimum Desirable Product in 3 months</li>
+                                <li class="font_18 fw_400 ln_24" style="color: black !important;">We provide the full coverage and control of the project processes while you keep working full-time on your main job</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="visual">
+                        <div class="card-wrapper">
+                          <div class="card card-1">
+                            <img
+                              class="card-img"
+                              src="./assets/images/large.png"
+                              alt="Fantasy warrior  - Video game character"
+                            />
+                          </div>
+                          <div class="card card-2">
+                            <img
+                              class="card-img"
+                              src="./assets/images/medium.png"
+                              alt="Green haired ninja in armor - Video game character"
+                            />
+                          </div>
+                          <div class="card card-3">
+                            <img
+                              class="card-img"
+                              src="./assets/images/small.png"
+                              alt="Female warrior in armor - Video game character"
+                            />
+                          </div>
+                          <div class="card card-4">
+                            <img
+                              class="card-img"
+                              src="./assets/images/start.png"
+                              alt="Agile warrior - Video game character"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </section>
+      <div class="Looking__sec" style="background-color: aliceblue;" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container">
+            <div class="Looking__main">
+                <div class="title">
+                    <h2 class="font_50 fw_700 text-white">Partnering with entrepreneurs to create epic products!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="at_glance_section" id="counter__number">
+        <div class="container">
+            <div class="title" data-aos="fade-down" data-aos-duration="1500">
+                <h2 class="font_50 fw_700" style="color: black !important;">Why choose Tapplix for software development?</h2>
+                <p class="font_18 fw_400 mt-3 mb-4">According to our 7+ years of development experience, gained knowledge, and tech expertise, we can work along with you to create game-changing digital products. Our IT development company has fine-tuned their software development services and SDLC process in order to build solutions that are exactly in line with your needs, market conditions, and a great price-quality ratio.</p>
+            </div>
+          <div class="glance_main mt_24">
+            <div class="glance__content" data-aos="fade-up" data-aos-duration="1500">
+              <h2 class="nav-text-color font_72_300 font__manifa count" style="color: black !important;" data-original="7+">0</h2>
+              <p class="font_18 fw_500">
+                Years on the IT market
+              </p>
+            </div>
+            <div class="glance__content" data-aos="fade-up" data-aos-duration="1500">
+              <h2 class="nav-text-color font_72_300 font__manifa count" style="color: black !important;" data-original="200+">0+</h2>
+              <p class="font_18 fw_500">
+                Completed projects
+              </p>
+            </div>
+            <div class="glance__content" data-aos="fade-up" data-aos-duration="1500">
+              <h2 class="nav-text-color font_72_300 font__manifa count" style="color: black !important;" data-original="6">0</h2>
+              <p class="font_18 fw_500">
+                Big brands in our portfolio
+              </p>
+            </div>
+            <div class="glance__content" data-aos="fade-up" data-aos-duration="1500">
+              <h2 class="nav-text-color font_72_300 font__manifa count" style="color: black !important;" data-original="2.3M">0</h2>
+              <p class="font_18 fw_500">
+                Top partners & clients
+              </p>
+            </div>
+            <div class="glance__content" data-aos="fade-up" data-aos-duration="1500">
+                <h2 class="nav-text-color font_72_300 font__manifa count" style="color: black !important;" data-original="97%">0</h2>
+                <p class="font_18 fw_500">
+                    Client satisfaction rate
+                </p>
+              </div>
+              <div class="glance__content" data-aos="fade-up" data-aos-duration="1500">
+                <h2 class="nav-text-color font_72_300 font__manifa count" style="color: black !important; " data-original="33">0</h2>
+                <p class="font_18 fw_500">
+                    Month average employee tenure
+                </p>
+              </div>
+          </div>
+    
+    
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="container">
+          <div class="ftt_links">
+            <div class="pb-4" data-aos="fade-right" data-aos-duration="1500">
+              <a class="text-decoration-none main_nav_logo" href="./index.html"><img src="./assets/images/main-logo.png" alt=""></a>
+              <p class="font_18 ln_24 pt-4">Unlocking Innovation, One App at a Time</p>
+              <div class="f_links mt-3"n style="flex-direction: row;">
+                <a class="d-flex align-items-center gap-2" href="https://www.facebook.com/Tapplix/" target="_blank">
+                  <div class="f_link_bx"><i class="fab fa-facebook-f"></i></div>
+                </a>
+                <a class="d-flex align-items-center gap-2" href="https://www.linkedin.com/company/tapplix/" target="_blank">
+                  <div class="f_link_bx"><i class="fab fa-linkedin-in"></i></div>
+                </a>
+                <a class="d-flex align-items-center gap-2" href="https://www.instagram.com/tapplix/?igshid=ZWQyN2ExYTkwZQ%3D%3D" target="_blank">
+                  <div class="f_link_bx"><i class="fab fa-instagram"></i></div>
+                </a>
+                <a class="d-flex align-items-center gap-2" href="https://dribbble.com/Tapplix" target="_blank">
+                  <div class="f_link_bx"><i class="fas fa-globe"></i></div>
+                </a>
+                
+              </div>
+            </div>
+            <div class="f_links" data-aos="fade-up" data-aos-duration="1500">
+              <!-- <h2>Quick Links</h2> -->
+              <a href="./about-us.html">About</a>
+              <a href="./services.html">Services</a>
+              <a href="./our-technologies.html">Technologies</a>
+              <a href="./our-process.html">Our Process</a>
+            </div>
+            <div class="f_links" data-aos="fade-left" data-aos-duration="1500">
+              <a class="d-flex align-items-center gap-2" href="mailto:info@tapplix.tech">
+                <div class="f_link_bx"><i class="fas fa-envelope"></i></div>
+                <p>info@tapplix.tech</p>
+              </a>
+              <a class="d-flex align-items-center gap-2" href="tel:+18003420989">
+                <div class="f_link_bx"><i class="fas fa-phone-alt"></i></div>
+                <p>+1 800 342 0989</p>
+              </a>
+              <a target="_blank" class="d-flex align-items-center gap-2" href="https://wa.me/18003420989">
+                <div class="f_link_bx"><i class="fab fa-whatsapp"></i></div>
+                <p>+1 800 342 0989</p>
+              </a>
+            </div>
+            
+          </div>
+         
+          <div class="footer-links">
+            <p>© 2017-2023 Tapplix. All Rights Reserved</p>
+            <div class="f_links" style="flex-direction: row; gap: 30px;">
+              <!-- <h2>Contact</h2> -->
+              <a class="d-flex align-items-center gap-2" href="./privacy-policy.html">
+                <p>Privacy Policy</p>
+              </a>
+              <a class="d-flex align-items-center gap-2" href="./terms-service.html">
+                <p>Terms of Use</p>
+              </a>
+              <a class="d-flex align-items-center gap-2" href="./cookies-policy.html">
+                <p>Cookies Policy</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      
+
+      
+
+
+
+
+
+     
+      <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+      <script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
+    <!-- <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+    <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+    <script src='https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js'></script> -->
+
+    <!-- ************************Scripts Start Here*********************************-->
+
+<!--------------------------------- Jquery --------------------------->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<!-------------------------------- Jquery Ends------------------------------->
+
+<!--------------------------------- Popper Js ------------------------------->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+<!--------------------------------- Popper Js Ends----------------------------->
+
+<!--------------------------------- Bootstrap 5 cdn ---------------------------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!------------------------------------ Bootstrap 5 cdn Ends--------------------->
+
+<!------------------------------- Custom Js ---------------------------------->
+<script src="assets/js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!------------------------------ Custom Js Ends --------------------->
+<!-- jQuery -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<!-- jQuery Validation Plugin -->
+<!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script> -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script> -->
+
+<!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script> -->
+<!-- ******************************Scripts End Here******************************-->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js'></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.nav-tabs .nav-link');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('shown.bs.tab', function() {
+            // Hide video in all tabs
+            tabs.forEach(t => {
+                t.querySelector('.button-video').style.display = 'none';
+            });
+            
+            // Show video in the active tab
+            this.querySelector('.button-video').style.display = 'block';
+        });
+    });
+});
+
+  </script>
+  <script>
+    //ripple btn
+const rippleBtn = document.getElementById("ripple");
+let ripples = document.createElement("span");
+let cleartimeout;
+
+//if want this effect when clicked then just add click insted of mouseover event
+rippleBtn.addEventListener("mouseover", function (e) {
+  let x = e.clientX - e.target.offsetLeft;
+  let y = e.clientY - e.target.offsetTop;
+  ripples.style.left = x + "px";
+  ripples.style.top = y + "px";
+  this.appendChild(ripples);
+
+  cleartimeout = setTimeout(() => {
+    ripples.remove();
+  }, 1000);
+});
+
+rippleBtn.addEventListener("mouseout", function () {
+  ripples.remove(cleartimeout);
+});
+
+  </script>
+  <script>
+    const spaceHolder = document.querySelector('.space-holder');
+const horizontal = document.querySelector('.horizontal');
+spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
+
+function calcDynamicHeight(ref) {
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+  const objectWidth = ref.scrollWidth;
+  return objectWidth - vw + vh + vw/2; // 150 is the padding (in pixels) desired on the right side of the .cards container. This can be set to whatever your styles dictate
+}
+
+window.addEventListener('scroll', () => {
+  const sticky = document.querySelector('.sticky');
+  horizontal.style.transform = `translateX(-${sticky.offsetTop}px)`;
+  // console.log(sticky.offsetTop)
+});
+
+window.addEventListener('resize', () => {
+  spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
+  // console.log(calcDynamicHeight(horizontal))
+});
+  </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    var section = document.querySelector('#counter__number');
+    var counters = section.querySelectorAll('.count');
+
+    var observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5
+    };
+
+    var observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                counters.forEach(counter => {
+                    var originalValue = counter.getAttribute('data-original');
+                    var numericValue = parseFloat(originalValue.replace(/[^\d.-]/g, ''));
+                    var suffix = originalValue.replace(/[\d.-]/g, '');
+                    var currentValue = 0; // Start from 0
+                    var duration = 2000; // Duration of the counting effect in milliseconds
+                    var increment = numericValue / (duration / 10); // Calculate increment based on duration
+                    var interval = 10; // Interval for updating the count
+
+                    // Function to update the count smoothly
+                    var updateCount = () => {
+                        if (currentValue < numericValue) {
+                            currentValue += increment;
+                            counter.innerText = Math.ceil(currentValue) + suffix;
+                            setTimeout(updateCount, interval);
+                        } else {
+                            counter.innerText = numericValue.toLocaleString() + suffix;
+                            // Add the 'finished' class to apply the final styles
+                            counter.classList.add('finished');
+                        }
+                    };
+
+                    // Start the counting animation
+                    updateCount();
+                });
+                observer.unobserve(section);
+            }
+        });
+    };
+
+    var observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    observer.observe(section);
+});
+
+  </script>
+  <script>
+function debounce(func, wait = 10) {
+    let timeout;
+    return function(...args) {
+        const context = this;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(context, args), wait);
+    };
+}
+
+function debounce(func, wait = 10) {
+    let timeout;
+    return function(...args) {
+        const context = this;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(context, args), wait);
+    };
+}
+
+function handleScroll() {
+    const section = document.querySelector('.transform_bg');
+    
+    if (!section){
+      console.log('exit');
+      
+      return; // Exit if the section is not found
+    }else{
+      console.log('yes');
+    }
+    const sectionTop = section.getBoundingClientRect().top;
+    const sectionHeight = section.offsetHeight;
+    const windowHeight = window.innerHeight;
+
+    const triggerStart = windowHeight - (sectionHeight * 0.25); // Trigger when the section is 25% in view
+    const triggerEnd = windowHeight - (sectionHeight * 0.75); // Trigger when the section is 75% out of view
+    
+    const image = section.querySelector('img'); // Target the image inside the section
+    
+    // Apply or remove inline animation style based on scroll position
+    if (sectionTop < triggerStart && sectionTop > triggerEnd) {
+        image.style.animation = 'smoothSkew 1s forwards';
+    } else {
+        image.style.animation = ''; // Remove the animation when not in view
+    }
+}
+
+document.addEventListener('scroll', debounce(handleScroll, 50));
+
+
+
+  </script>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navItems = document.getElementById('navItems');
+
+    hamburger.addEventListener('click', () => {
+        navItems.classList.toggle('show');
+    });
+</script>
+
+<script>
+  /* ---- particles.js config ---- */
+
+particlesJS("particles-js", {
+"particles": {
+"number": {
+"value": 150,
+"density": {
+  "enable": true,
+  "value_area": 1200
+}
+},
+"color": {
+"value": "#ffffff"
+},
+"shape": {
+"type": "circle",
+"stroke": {
+  "width": 0,
+  "color": "#000000"
+},
+"polygon": {
+  "nb_sides": 5
+},
+"image": {
+  "src": "img/github.svg",
+  "width": 100,
+  "height": 100
+}
+},
+"opacity": {
+"value": 0.5,
+"random": false,
+"anim": {
+  "enable": false,
+  "speed": 1,
+  "opacity_min": 0.1,
+  "sync": false
+}
+},
+"size": {
+"value": 3,
+"random": true,
+"anim": {
+  "enable": false,
+  "speed": 40,
+  "size_min": 0.1,
+  "sync": false
+}
+},
+"line_linked": {
+"enable": true,
+"distance": 150,
+"color": "#ffffff",
+"opacity": 0.4,
+"width": 1
+},
+"move": {
+"enable": true,
+"speed": 6,
+"direction": "none",
+"random": false,
+"straight": false,
+"out_mode": "out",
+"bounce": false,
+"attract": {
+  "enable": false,
+  "rotateX": 600,
+  "rotateY": 1200
+}
+}
+},
+"interactivity": {
+"detect_on": "canvas",
+"events": {
+"onhover": {
+  "enable": true,
+  "mode": "grab"
+},
+"onclick": {
+  "enable": true,
+  "mode": "push"
+},
+"resize": true
+},
+"modes": {
+"grab": {
+  "distance": 140,
+  "line_linked": {
+    "opacity": 1
+  }
+},
+"bubble": {
+  "distance": 400,
+  "size": 40,
+  "duration": 2,
+  "opacity": 8,
+  "speed": 3
+},
+"repulse": {
+  "distance": 200,
+  "duration": 0.4
+},
+"push": {
+  "particles_nb": 4
+},
+"remove": {
+  "particles_nb": 2
+}
+}
+},
+"retina_detect": true
+});
+
+
+/* ---- stats.js config ---- */
+
+var count_particles, stats, update;
+stats = new Stats;
+stats.setMode(0);
+stats.domElement.style.position = 'absolute';
+stats.domElement.style.left = '0px';
+stats.domElement.style.top = '0px';
+document.body.appendChild(stats.domElement);
+count_particles = document.querySelector('.js-count-particles');
+update = function() {
+stats.begin();
+stats.end();
+if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+}
+requestAnimationFrame(update);
+};
+requestAnimationFrame(update);
+</script>
+
+<script>
+gsap.timeline()
+  .set('.ring', { rotationY: 180, cursor: 'grab' })
+  .set('.img', { 
+    rotateY: (i) => i * -40,
+    transformOrigin: '50% 50% 500px',
+    z: -500,
+    backgroundPosition: (i) => getBgPos(i),
+  })
+  .from('.img', {
+    duration: 1.5,
+    y: 200,
+    opacity: 0,
+    stagger: 0.1,
+    ease: 'expo'
+  })
+  .add(() => {
+    $('.img').on('mouseenter', (e) => {
+      let current = e.currentTarget;
+      gsap.to('.img', { opacity: (i, t) => (t === current) ? 1 : 0.5, ease: 'power3' });
+    });
+    $('.img').on('mouseleave', (e) => {
+      gsap.to('.img', { opacity: 1, ease: 'power2.inOut' });
+    });
+  }, '-=0.5');
+
+$(window).on('mousedown touchstart', dragStart);
+$(window).on('mouseup touchend', dragEnd);
+
+function dragStart(e){ 
+  if (e.touches) e.clientX = e.touches[0].clientX;
+  xPos = Math.round(e.clientX);
+  gsap.set('.ring', {cursor: 'grabbing'});
+  $(window).on('mousemove touchmove', drag);
+}
+
+function drag(e){
+  if (e.touches) e.clientX = e.touches[0].clientX;    
+  gsap.to('.ring', {
+    rotationY: '-=' + ((Math.round(e.clientX) - xPos) % 360),
+    onUpdate: () => { gsap.set('.img', { backgroundPosition: (i) => getBgPos(i) }) }
+  });
+  xPos = Math.round(e.clientX);
+}
+
+function dragEnd(e){
+  $(window).off('mousemove touchmove', drag);
+  gsap.set('.ring', {cursor: 'grab'});
+}
+
+function getBgPos(i){ 
+  return (100 - gsap.utils.wrap(0, 360, gsap.getProperty('.ring', 'rotationY') - 180 - i * 36) / 360 * 500) + 'px 0px';
+} 
+
+
+</script>
+</body>
+</html>
